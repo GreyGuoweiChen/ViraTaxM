@@ -1,0 +1,14 @@
+name: virataxm
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3
+  - numpy>=1.23.5
+  - pandas>=2.0.3
+  - scikit-learn>=1.3.2
+  - biopython>=1.83
+  - diamond>=2.0.15
+  - mcl>=22.282
+  - prodigal>=2.6.3

@@ -1,2 +1,2 @@
-# VirGenus
-VirGenus: a taxonomic classification pipeline for metagenomic viral sequences
+# ViraTaxM
+ViraTaxM: a Viral Taxonomic classification pipeline for Metagenomic sequences
