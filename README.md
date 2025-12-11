@@ -20,6 +20,10 @@ You could build the environment from GitHub:
 ```
     git clone https://github.com/GreyGuoweiChen/ViraTaxM.git
     cd ViraTaxM
+
+    # use git-lfs to download the reference sequences
+    git lfs fetch
+    git lfs checkout
     
     # Create the environment and install the dependencies using conda or mamba
     conda env create -f environment.yml
@@ -35,6 +39,9 @@ You could build the environment from GitHub:
 ## Usage:
 ### Example
 ```
+  # type -h for printing paramrters
+  virataxm -h
+
   # you only need to distribute reference database once
   virataxm update --auto
   
