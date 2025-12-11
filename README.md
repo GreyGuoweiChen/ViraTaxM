@@ -22,7 +22,7 @@ You could build the environment from GitHub:
     cd ViraTaxM
     
     # Create the environment and install the dependencies using conda or mamba
-    coonda env create -f environment.yml
+    conda env create -f environment.yml
     # or
     mamba env create -f environment.yml
     
