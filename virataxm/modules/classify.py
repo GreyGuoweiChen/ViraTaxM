@@ -260,7 +260,7 @@ def preprocessing_data(input_data, ref_path, output_path, top_cutoff, length, th
                    f'-a {prodigal_out_protein} -p meta'
 
     if not os.path.exists(prodigal_out_protein):
-        print("Prodigal translation...")
+        print("\tProdigal translation...")
         _ = subprocess.check_call(prodigal_cmd, shell=True,
                                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("\tProtein file generated.")
@@ -295,11 +295,9 @@ def _classify(input_data, ref_path, output_path, gini_cutoff, top_cutoff, length
     ref_label = f"{ref_path}/ref.csv"
 
 
-    print("1 - Preprocessing ... (length filter / translatation / DB construction / protein alignment)")
+    print("1 - Preprocessing ... (length filter / translation / DB construction / protein alignment)")
     output_dir, filtered_seq_list, prot_file, diamond_out, dict_seq_len =  \
         preprocessing_data(input_data, ref_path, output_path, top_cutoff, length, threads)
-    # good，里面包含ref 的地址，因为需要用diamond 做alignment，得到 fmt 6 文件。
-    # prot_file 不需要额外的变量。
 
     print("2 - Parsing proteins... (read and parse the protein alignment result, generate protein taxonomic info)")
     #   1、alignment information of best hit
