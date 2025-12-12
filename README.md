@@ -46,5 +46,5 @@ You could build the environment from GitHub:
   virataxm update --auto
   
   # run virataxm classification and clustering module subsequently
-  virataxm predict -i virataxm/test/seq_test.fasta -o virataxm/test
+  virataxm predict -i test/seq_test.fasta -o test
 ```
